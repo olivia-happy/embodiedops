@@ -1,0 +1,13 @@
+review_id,review,rating,aspect,sentiment
+demo-001,"排队时间过长，午高峰取餐进度不透明。",1,service,negative
+demo-002,"客服回复很慢，问题两天后才得到处理。",1,service,negative
+demo-003,"预约流程清晰，到店后很快完成核销。",5,service,positive
+demo-004,"店内座位紧张且桌面没有及时清理。",2,environment,negative
+demo-005,"环境安静，适合和朋友聊天。",5,environment,positive
+demo-006,"空调温度偏低，等餐时感觉不舒服。",2,environment,negative
+demo-007,"餐品送到时已经变凉，口感受影响。",1,food,negative
+demo-008,"分量足，辣度标识和实际体验一致。",5,food,positive
+demo-009,"新品图片与实物差异较大，希望补充真实图片。",2,food,negative
+demo-010,"支付页面加载很快，优惠券使用步骤明确。",5,app,positive
+demo-011,"定位经常跳到附近门店，影响下单。",2,app,negative
+demo-012,"请联系 13812345678 处理订单问题。",1,service,negative

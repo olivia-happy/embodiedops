@@ -1,0 +1,39 @@
+{
+  "snapshot_type": "offline_validation_snapshot",
+  "snapshot_version": "embodiedops.snapshot.v1",
+  "source": {
+    "dataset_version_id": "embodied-demo-v1",
+    "episode_ids": ["embodied-demo-0001"],
+    "event_ids": ["embodied-demo-0001-event-001"],
+    "fixture": "synthetic_tabletop_fixture"
+  },
+  "diagnosis": {
+    "episode_id": "embodied-demo-0001",
+    "failure_phase": "grasp",
+    "root_cause_candidates": [
+      {
+        "cause": "grasp contact did not retain the object",
+        "mechanism": "The bounded event stream records a grasp-contact warning before the unsuccessful outcome."
+      }
+    ],
+    "supporting_event_ids": ["embodied-demo-0001-event-001"],
+    "counter_event_ids": [],
+    "unknowns": ["No counter evidence is available in the fixture."],
+    "confidence_band": "low",
+    "decision_status": "needs_evidence",
+    "validation_code": "MISSING_COUNTER_EVIDENCE",
+    "rules_version": "diagnosis_rules_v1"
+  },
+  "runtime": {
+    "provider": "deterministic_offline_fixture",
+    "model_name": null,
+    "live_model": false,
+    "manual_review": false
+  },
+  "limitations": {
+    "data_type": "synthetic",
+    "manual_review_status": "not_performed",
+    "real_robot_execution": false,
+    "note": "This snapshot is a reproducible validation artifact, not a live Qwen response or a production-quality claim."
+  }
+}

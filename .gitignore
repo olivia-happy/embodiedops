@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local data and secrets
+.env
+data/*.duckdb
+data/embodied/raw/
+
+# Node / Next.js
+node_modules/
+.next/
+frontend/node_modules/
+frontend/.next/
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+
+# Local working artifacts (not for public)
+.chrome-headless-*/
+.superpowers/

@@ -1,0 +1,41 @@
+{
+  "manifest_version": 1,
+  "version_id": "asap-demo-2ecc306bb6c8",
+  "source": {
+    "name": "SignalForge original synthetic Chinese review sample",
+    "url": "https://github.com/Meituan-Dianping/asap",
+    "license": "CC0-1.0 (this bundled synthetic sample only)",
+    "citation": "The bundled rows are original synthetic examples; ASAP is cited only as the optional external schema reference and is not redistributed here."
+  },
+  "imported_at": "2026-08-09T06:05:48.408866Z",
+  "files": {
+    "reviews": {
+      "path": "..\\data\\demo\\asap_reviews_sample.csv",
+      "sha256": "sha256:2ecc306bb6c8e06e94c1bdcca1e520457d19f9d4f5a94bb054e3ee1db5a16327",
+      "row_count": 12
+    },
+    "market_events": {
+      "path": "..\\data\\demo\\market_events_sample.csv",
+      "sha256": "sha256:72dc91cf5737a21961758e8208ef1c48e3e949fa1b63ac2e1a651889c2e6fafe",
+      "row_count": 10
+    }
+  },
+  "column_mapping": {
+    "reviews": {
+      "rating": "rating",
+      "aspect": "aspect",
+      "sentiment": "sentiment",
+      "content": "review",
+      "id": "review_id"
+    },
+    "market_events": {
+      "event_id": "event_id",
+      "source_url": "source_url",
+      "published_on": "published_on",
+      "excerpt": "excerpt",
+      "event_type": "event_type",
+      "industry": "industry",
+      "evidence_quality": "evidence_quality"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "dataset": "gold_reviews.jsonl",
+  "row_count": 16,
+  "aspect_macro_f1": 1.0,
+  "sentiment_macro_f1": 0.881,
+  "evidence_precision": 0.857,
+  "unsupported_claim_rate": 0.143,
+  "feedback_distribution": {
+    "confirmed": 0,
+    "edited": 0,
+    "rejected": 0
+  },
+  "class_distribution": {
+    "service": 4,
+    "app": 4,
+    "price": 4,
+    "delivery": 3,
+    "unknown": 1
+  },
+  "decision_memo_dataset": "gold_decision_memos.jsonl",
+  "decision_memo_case_count": 7,
+  "decision_memo_case_distribution": {
+    "actionable": 2,
+    "distributed_needs_evidence": 2,
+    "refused": 2,
+    "counter_evidence_omission": 1,
+    "redaction": 1,
+    "failed": 1,
+    "unknown_citation": 1,
+    "numeric_mismatch": 1
+  },
+  "subproblem_evidence_precision": 0.875,
+  "citation_completeness": 0.929,
+  "unsupported_numeric_rate": 0.0,
+  "decision_status_case_count": 6,
+  "decision_status_accuracy": 1.0,
+  "generation_outcome_case_count": 7,
+  "generation_outcome_accuracy": 1.0,
+  "evidence_plan_specificity": 0.875,
+  "limitations": "小型合成离线回归集，尚未经过独立复核；本脚本不运行生产验证器，固定候选输出不代表当前模型或生产质量。"
+}

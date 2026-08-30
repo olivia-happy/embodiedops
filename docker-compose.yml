@@ -1,0 +1,39 @@
+name: signalforge
+
+services:
+  api:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      LOCAL_MODEL_BASE_URL: ${LOCAL_MODEL_BASE_URL:-http://host.docker.internal:11434}
+      LOCAL_MODEL_NAME: ${LOCAL_MODEL_NAME:-qwen3.5:9b}
+      LOCAL_MODEL_TIMEOUT_SECONDS: ${LOCAL_MODEL_TIMEOUT_SECONDS:-120}
+      LOCAL_MODEL_CONTEXT_LENGTH: ${LOCAL_MODEL_CONTEXT_LENGTH:-16384}
+      LOCAL_MODEL_TEMPERATURE: ${LOCAL_MODEL_TEMPERATURE:-0}
+      LOCAL_MODEL_SEED: ${LOCAL_MODEL_SEED:-42}
+      LOCAL_MODEL_MAX_OUTPUT_TOKENS: ${LOCAL_MODEL_MAX_OUTPUT_TOKENS:-2048}
+      LOCAL_MODEL_THINK: ${LOCAL_MODEL_THINK:-true}
+      DEMO_READ_ONLY: ${DEMO_READ_ONLY:-false}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+  web:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-}
+        NEXT_PUBLIC_DEMO_READ_ONLY: ${NEXT_PUBLIC_DEMO_READ_ONLY:-false}
+    ports:
+      - "${WEB_HOST_PORT:-3000}:3000"
+    environment:
+      SIGNALFORGE_API_ORIGIN: ${SIGNALFORGE_API_ORIGIN:-http://api:8000}
+    depends_on:
+      api:
+        condition: service_healthy

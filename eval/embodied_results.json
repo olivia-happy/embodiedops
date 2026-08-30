@@ -1,0 +1,250 @@
+{
+  "raw_model": {
+    "provider": "offline_fixture",
+    "attempt_count": 0,
+    "accepted_count": 0,
+    "rejected_unknown_event_count": 1,
+    "rejected_unknown_event_ids": [
+      "unknown-timeout-event"
+    ],
+    "note": "No live provider output was scored; fixture predictions are post-validation inputs."
+  },
+  "validated_system": {
+    "case_count": 5,
+    "metrics": {
+      "phase_accuracy": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "event_evidence_precision": {
+        "numerator": 3,
+        "denominator": 4,
+        "rate": 0.75
+      },
+      "event_evidence_coverage": {
+        "numerator": 3,
+        "denominator": 4,
+        "rate": 0.75
+      },
+      "refusal_correctness": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "decision_status_accuracy": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "validated_event_evidence": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0
+      }
+    },
+    "persisted_unknown_event_ids": 0,
+    "cases": [
+      {
+        "case_id": "grasp-miss-001",
+        "episode_id": "embodied-demo-0001",
+        "dataset_version_id": "embodied-demo-v1",
+        "manual_review_status": "not_performed",
+        "metrics": {
+          "phase_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "event_evidence_precision": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "event_evidence_coverage": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "refusal_correctness": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "decision_status_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "validated_event_evidence": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          }
+        }
+      },
+      {
+        "case_id": "occlusion-001",
+        "episode_id": "embodied-demo-0002",
+        "dataset_version_id": "embodied-demo-v1",
+        "manual_review_status": "not_performed",
+        "metrics": {
+          "phase_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "event_evidence_precision": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "event_evidence_coverage": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "refusal_correctness": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "decision_status_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "validated_event_evidence": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          }
+        }
+      },
+      {
+        "case_id": "collision-001",
+        "episode_id": "embodied-demo-0003",
+        "dataset_version_id": "embodied-demo-v1",
+        "manual_review_status": "not_performed",
+        "metrics": {
+          "phase_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "event_evidence_precision": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "event_evidence_coverage": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "refusal_correctness": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "decision_status_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "validated_event_evidence": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          }
+        }
+      },
+      {
+        "case_id": "planner-refused-001",
+        "episode_id": "embodied-demo-0004",
+        "dataset_version_id": "embodied-demo-v1",
+        "manual_review_status": "not_performed",
+        "metrics": {
+          "phase_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "event_evidence_precision": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "event_evidence_coverage": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          },
+          "refusal_correctness": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "decision_status_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "validated_event_evidence": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      {
+        "case_id": "timeout-unknown-citation-001",
+        "episode_id": "embodied-demo-0005",
+        "dataset_version_id": "embodied-demo-v1",
+        "manual_review_status": "not_performed",
+        "metrics": {
+          "phase_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "event_evidence_precision": {
+            "numerator": 0,
+            "denominator": 1,
+            "rate": 0.0
+          },
+          "event_evidence_coverage": {
+            "numerator": 0,
+            "denominator": 1,
+            "rate": 0.0
+          },
+          "refusal_correctness": {
+            "numerator": 0,
+            "denominator": 1,
+            "rate": 0.0
+          },
+          "decision_status_accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1.0
+          },
+          "validated_event_evidence": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      }
+    ]
+  },
+  "runtime": {
+    "provider": "offline_fixture",
+    "mode": "offline_validation",
+    "fixture": "embodied_gold_cases.jsonl"
+  },
+  "limitations": [
+    "Synthetic fixture; not a production or real-robot quality claim.",
+    "manual_review_status=not_performed for synthetic cases.",
+    "Raw model quality is not measured because no live provider was called."
+  ]
+}

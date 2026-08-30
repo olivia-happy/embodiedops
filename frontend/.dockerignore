@@ -1,0 +1,13 @@
+node_modules
+.next
+.venv
+venv
+__pycache__
+.pytest_cache
+.ruff_cache
+coverage
+.cache
+logs
+*.log
+npm-debug.log*
+.git

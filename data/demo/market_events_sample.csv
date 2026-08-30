@@ -1,0 +1,11 @@
+event_id,source_url,published_on,excerpt,event_type,industry,evidence_quality
+policy-tax-list-2024,https://www.ndrc.gov.cn/xxgk/zcfb/tz/202403/t20240322_1365168_ext.html,2024-03-22,"发改委等部门发布集成电路与软件企业税收优惠清单申报要求；该样本将其作为政策合规跟踪信号。",policy,semiconductor,95
+miit-stable-growth,https://wap.miit.gov.cn/jgsj/dzs/wjfb/art/2023/art_86528a9a7e0f4f0f9f5960897ce8d105.html,2023-08-29,"工信部发布电子信息制造业稳增长行动方案，提出优化集成电路产业布局并增强材料、设备和零配件配套能力。",policy,semiconductor,95
+sse-canxin-listing,https://www.sse.com.cn/disclosure/announcement/listing/ipo/c/c_20240410_10753065.shtml,2024-04-10,"上交所公告灿芯半导体在科创板上市交易；该样本将其作为设计服务赛道的竞争格局观察信号。",market,semiconductor,92
+sse-semiconductor-index,https://www.sse.com.cn/market/sseindex/diclosure/c/c_20240514_10756001.shtml,2024-05-14,"上交所发布科创板半导体30指数，以代表性上市公司证券反映先进制程领域表现。",market,semiconductor,92
+sse-semi-annual-report,https://english.sse.com.cn/news/newsrelease/c/c_20240828_10761133.shtml,2024-08-28,"上交所英文资讯汇总科创板公司半年度披露情况；该样本仅记录行业景气观察，不构成投资建议。",market,semiconductor,85
+miit-talent-report,https://www.miit.gov.cn/xwdt/gxdt/bsdw/art/2024/art_cdd8697a34804850b45bfd899319d1c5.html,2024-01-02,"工信部转载高校集成电路学院独立运行与产业合作信息；该样本将其作为人才供给信号。",talent,semiconductor,88
+cac-ic-outline,https://www.cac.gov.cn/2014-06/26/c_1111325916.htm,2014-06-26,"中央网信办转载国家集成电路产业发展推进纲要相关信息；该样本作为长期政策背景而非实时事件。",policy,semiconductor,88
+shanghai-jiading-policy,https://www.shanghai.gov.cn/tszczq-xnyqj11/20250610/90b68024fd934cd1a9c0b790d68c8a1a.html,2024-06-25,"上海嘉定公开集成电路产业支持政策，涵盖测试验证和产业链协同等支持方向。",policy,semiconductor,92
+guangzhou-huangpu-policy,https://www.gz.gov.cn/gzzcwjk/gzdata/content/post_9687797.html,2024-06-05,"广州黄埔公开集成电路产业发展办法实施细则；该样本作为地方政策落地节奏信号。",policy,semiconductor,90
+industry-directory-2024,https://www.gov.cn/zhengce/202401/P020240104370097817007.pdf,2023-12-27,"国家发展改革委发布产业结构调整指导目录（2024年本），涉及先进封装测试和集成电路装备等方向。",policy,semiconductor,95

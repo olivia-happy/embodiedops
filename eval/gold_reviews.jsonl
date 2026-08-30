@@ -1,0 +1,16 @@
+{"review_id":"g01","text":"客服一直没有回复","gold_aspect":"service","gold_sentiment":"negative","gold_severity":"high","supports_claim":true}
+{"review_id":"g02","text":"排队等待太久","gold_aspect":"service","gold_sentiment":"negative","gold_severity":"high","supports_claim":true}
+{"review_id":"g03","text":"客服回答很清楚","gold_aspect":"service","gold_sentiment":"positive","gold_severity":"low","supports_claim":true}
+{"review_id":"g04","text":"人工客服态度一般","gold_aspect":"service","gold_sentiment":"neutral","gold_severity":"low","supports_claim":false}
+{"review_id":"g05","text":"应用打开后闪退","gold_aspect":"app","gold_sentiment":"negative","gold_severity":"high","supports_claim":true}
+{"review_id":"g06","text":"页面加载速度很快","gold_aspect":"app","gold_sentiment":"positive","gold_severity":"low","supports_claim":true}
+{"review_id":"g07","text":"功能入口不太好找","gold_aspect":"app","gold_sentiment":"negative","gold_severity":"medium","supports_claim":true}
+{"review_id":"g08","text":"界面看起来比较普通","gold_aspect":"app","gold_sentiment":"neutral","gold_severity":"low","supports_claim":false}
+{"review_id":"g09","text":"套餐价格偏高","gold_aspect":"price","gold_sentiment":"negative","gold_severity":"medium","supports_claim":true}
+{"review_id":"g10","text":"优惠规则说明很透明","gold_aspect":"price","gold_sentiment":"positive","gold_severity":"low","supports_claim":true}
+{"review_id":"g11","text":"收费项目不够明确","gold_aspect":"price","gold_sentiment":"negative","gold_severity":"high","supports_claim":true}
+{"review_id":"g12","text":"价格可以接受","gold_aspect":"price","gold_sentiment":"neutral","gold_severity":"low","supports_claim":false}
+{"review_id":"g13","text":"配送比预计晚两天","gold_aspect":"delivery","gold_sentiment":"negative","gold_severity":"medium","supports_claim":true}
+{"review_id":"g14","text":"物流跟踪信息很及时","gold_aspect":"delivery","gold_sentiment":"positive","gold_severity":"low","supports_claim":true}
+{"review_id":"g15","text":"商品包装完好","gold_aspect":"delivery","gold_sentiment":"positive","gold_severity":"low","supports_claim":false}
+{"review_id":"g16","text":"收到的内容已脱敏","gold_aspect":"unknown","gold_sentiment":"unknown","gold_severity":"unknown","supports_claim":false}

@@ -1,0 +1,55 @@
+{
+  "manifest_version": 1,
+  "version_id": "asap-demo-v1",
+  "dataset_kind": "original_synthetic_demo",
+  "source": {
+    "name": "SignalForge original synthetic Chinese review sample",
+    "url": "https://github.com/Meituan-Dianping/asap",
+    "license": "CC0-1.0 (the bundled synthetic review sample only)",
+    "citation": "The bundled review rows are original synthetic examples. ASAP is cited solely as an optional external schema and research reference; no ASAP rows are redistributed."
+  },
+  "review_reference": {
+    "name": "ASAP: A Chinese Review Dataset towards Aspect Category Sentiment Analysis and Rating Prediction",
+    "repository": "https://github.com/Meituan-Dianping/asap",
+    "upstream_license_as_declared_by_repository": "Apache-2.0",
+    "imported": false
+  },
+  "imported_at": "2026-08-09T00:00:00Z",
+  "files": {
+    "reviews": {
+      "path": "data/demo/asap_reviews_sample.csv",
+      "sha256": "sha256:2ecc306bb6c8e06e94c1bdcca1e520457d19f9d4f5a94bb054e3ee1db5a16327",
+      "row_count": 12
+    },
+    "market_events": {
+      "path": "data/demo/market_events_sample.csv",
+      "sha256": "sha256:72dc91cf5737a21961758e8208ef1c48e3e949fa1b63ac2e1a651889c2e6fafe",
+      "row_count": 10
+    }
+  },
+  "column_mapping": {
+    "reviews": {
+      "id": "review_id",
+      "content": "review",
+      "rating": "rating",
+      "aspect": "aspect",
+      "sentiment": "sentiment"
+    },
+    "market_events": {
+      "event_id": "event_id",
+      "source_url": "source_url",
+      "published_on": "published_on",
+      "excerpt": "excerpt",
+      "event_type": "event_type",
+      "industry": "industry",
+      "evidence_quality": "evidence_quality"
+    }
+  },
+  "cleaning": {
+    "whitespace_normalization": true,
+    "phone_redaction": "[PHONE]",
+    "email_redaction": "[EMAIL]",
+    "rating_constraint": "integer 1..5",
+    "invalid_rows": "reject entire import before database write"
+  }
+}
