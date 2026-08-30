@@ -4,6 +4,16 @@ EmbodiedOps 是 SignalForge 中面向具身智能团队的本地、只读故障�
 
 这是一份面试作品与工程原型，不是机器人控制系统：页面不发送控制命令，不接入真实机器人的执行链路，也不声称持有 Unitree、优必选、傅利叶或其他公司的内部数据。
 
+## 界面预览
+
+![EmbodiedOps 只读诊断界面](docs/screenshots/embodied-overview.png)
+
+*只读演示：episode 回放、只读决策链路与失败分布指标（dataset `embodied-demo-v1`，写入被阻断）。*
+
+![EmbodiedOps 页面全览](docs/screenshots/embodied-full.png)
+
+![SignalForge 决策工作台首页](docs/screenshots/workbench-home.png)
+
 ## 产品解决什么问题
 
 对于一次 pick-and-place 失败，单纯记录成功/失败无法回答：失败发生在哪个阶段、支持该判断的事件是什么、证据是否有反例、下一步该验证什么。EmbodiedOps 将这条链路标准化为：
