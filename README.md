@@ -4,6 +4,8 @@ EmbodiedOps 是 SignalForge 中面向具身智能团队的本地、只读故障�
 
 这是一份面试作品与工程原型，不是机器人控制系统：页面不发送控制命令，不接入真实机器人的执行链路，也不声称持有 Unitree、优必选、傅利叶或其他公司的内部数据。
 
+> **运行成本：免费** — 全本地运行，不调用付费 API / 云模型 / 商业数据；Ollama 为可选本地模型。
+
 ## 界面预览
 
 ![EmbodiedOps 只读诊断界面](docs/screenshots/embodied-overview.png)
