@@ -27,3 +27,4 @@ Thumbs.db
 # Local working artifacts (not for public)
 .chrome-headless-*/
 .superpowers/
+data/*.duckdb.wal
