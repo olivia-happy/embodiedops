@@ -1,0 +1,49 @@
+---
+description: EmbodiedOps 项目总则——证据绑定诊断工作台的核心红线
+alwaysApply: true
+---
+
+# EmbodiedOps 项目总则
+
+**项目**：面向具身智能 / 机器人任务失败的证据绑定诊断工作台（后端包名 `signalforge`）。
+**输入**：机器人 episode 的轨迹与日志。**输出**：哪个阶段失败了、可能是什么机制、证据是什么。
+
+完整约定见 [AGENTS.md](../../AGENTS.md) 与 [HANDOFF.md](../../HANDOFF.md)。
+
+## 七条红线（任何改动都不得违反）
+
+1. **只读、不控制** —— 不发送任何机器人控制命令，不新增下发指令 / 回放动作 / 改状态的接口。
+2. **fail-closed** —— 证据不足输出 `needs_evidence` 或拒绝，不给「看着合理」的结论。
+3. **模型与规则分工固定** —— LLM 只在给定摘要与事件 ID 范围内归纳候选机制；
+   事件、时间窗、数值主张、反例由规则层验证。禁止模型产出数值或结论。
+4. **阶段切分确定性** —— 五阶段切分同一份 episode 每次结果必须一致，不得换成模型推断。
+5. **demo 数据不可变** —— manifest 带 SHA-256，冲突即失败关闭。不要「调数字」美化演示。
+6. **评测四层分开报告** —— 诊断规则质量 / 模型质量 / 人工接受率 / 业务结果，
+   不合并成单一「准确率」；合成 before/after 不构成生产 ROI。
+7. **降级必须透明** —— 模型不可用、数据缺失、契约未填充都必须显式标注，禁止静默回落。
+
+## 数据边界
+
+当前**全部是合成数据**（30 条 synthetic episode，`real_robot_data=false` / `live_model=false` /
+`manual_review_status=not_performed`）。没有真实机器人轨迹、生产日志或客户数据。
+`docs/EMBODIEDOPS_REAL_DATA_CARD.md` 是**未被填充的契约**。
+无 sim-to-real 结论，人工接受率未测。Cloudflare Quick Tunnel 地址**绝不能**写进对外文件。
+
+对外发布前先跑 `cd backend && pytest tests/test_public_artifact_safety.py -q`。
+
+> 诚实披露「没验到什么」在这个项目里是加分项。不要删边界声明。
+
+## 命令
+
+```bash
+cd backend && pytest -q          # 266 用例
+cd backend && ruff check .       # 风格
+cd frontend && npm test          # 42 用例（vitest）
+cd frontend && npm run lint
+```
+
+## 风格
+
+- Python：ruff（E/F/I/UP，行长 100），类型注解尽量补全。
+- 前端：ESLint + TypeScript strict。
+- 不提交 `.env` / `data/*.duckdb` / `data/embodied/raw/` / 真实密钥。
